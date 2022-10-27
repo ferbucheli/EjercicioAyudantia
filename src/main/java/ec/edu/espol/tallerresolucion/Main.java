@@ -22,11 +22,12 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         System.out.println("Por favor, ingrese el nombre del Personaje Principal: ");
         String nombrePJ1 = sc.nextLine();
-        System.out.println("Por favor, ingrese el nombre del Personaje: ");
+        System.out.println("Por favor, ingrese el nombre del Personaje 2: ");
         String nombrePJ2 = sc.nextLine();
         
         Personaje personajeP = new Personaje(nombrePJ1, true);
         Personaje personajeS = new Personaje(nombrePJ2, false);
+        Personaje p3 = new Personaje("Fernando", false);
         
         System.out.println("Ingrese el nombre de la Fruta 1: ");
         String nombreF1 = sc.nextLine();
@@ -35,7 +36,7 @@ public class Main {
         Fruta f1 = new Fruta(nombreF1, caloriasF1);
         System.out.println("Ingrese el nombre de la Fruta 2: ");
         String nombreF2 = sc.next();
-        System.out.println("Ingrese las calorias de la Fruta 2: ");
+        System.out.println("Ingrese las calorias de la Fruta 2 : ");
         int caloriasF2 = sc.nextInt();
         Fruta f2 = new Fruta(nombreF2, caloriasF2);
         
@@ -44,6 +45,7 @@ public class Main {
         
         System.out.println("Peronaje Principal: " + personajeP.mostrarInformacion());
         System.out.println("Personaje Secundario: " + personajeS.mostrarInformacion());
+        
     }
     
 }
